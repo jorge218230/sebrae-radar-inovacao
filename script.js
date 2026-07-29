@@ -483,7 +483,7 @@ function submitData() {
         </div>
     `;
 
-    const webhookUrl = 'http://212.85.0.161:32768/webhook-test/ae876a22-3a8c-473a-92bf-41f963d81915';
+    const webhookUrl = 'https://lease-transaction-connection-worcester.trycloudflare.com/webhook-test/ae876a22-3a8c-473a-92bf-41f963d81915';
 
     const payload = {
         cnpj: cnpjValue,
