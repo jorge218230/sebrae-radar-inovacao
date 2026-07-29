@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar de Inovação - ALI Produtividade | Sebrae</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Cabeçalho Sebrae / ALI Produtividade -->
+        <div class="brand-header">
+            <div class="brand-left">
+                <span class="sebrae-badge">SEBRAE</span>
+                <div class="brand-divider"></div>
+                <div class="brand-program">
+                    <span class="program-title">ALI Produtividade</span>
+                    <span class="program-sub">Radar de Inovação</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra de Progresso Responsiva -->
+        <div class="progress-wrapper" id="progress-wrapper" style="display: none;">
+            <div class="progress-info">
+                <span class="progress-text" id="progress-text">Progresso</span>
+                <span class="progress-percent" id="progress-percent">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <!-- Conteúdo Dinâmico -->
+        <div id="app"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
