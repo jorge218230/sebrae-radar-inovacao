@@ -1,176 +1,176 @@
 // Todas as 24 Questões do Radar de Inovação
 const questions = [
     // Dimensão 1
-    { 
-        id: 'Q1', 
-        dimension: 'Dimensão 1: Controles Gerenciais', 
-        text: 'Sua empresa monitora os resultados por meio de indicadores de desempenho?', 
+    {
+        id: 'Q1',
+        dimension: 'Dimensão 1: Controles Gerenciais',
+        text: 'Sua empresa monitora os resultados por meio de indicadores de desempenho?',
         options: [{ value: 'a', label: 'Não monitora.' }, { value: 'b', label: 'Sim, monitora 1 a 2 indicadores.' }, { value: 'c', label: 'Sim, monitora 3 ou mais indicadores.' }],
         justificativaHelp: 'Informe quais são os principais indicadores monitorados (ex: faturamento mensal, margem de lucro, volume de vendas, satisfação do cliente, produtividade) e com qual frequência são acompanhados.'
     },
-    { 
-        id: 'Q2', 
-        dimension: 'Dimensão 1: Controles Gerenciais', 
-        text: 'Quais são as pessoas que têm conhecimento desses indicadores?', 
+    {
+        id: 'Q2',
+        dimension: 'Dimensão 1: Controles Gerenciais',
+        text: 'Quais são as pessoas que têm conhecimento desses indicadores?',
         options: [{ value: 'a', label: 'Só os gestores.' }, { value: 'b', label: 'Os gestores e mais uma ou duas pessoas da empresa.' }, { value: 'c', label: 'A maioria dos funcionários.' }],
         justificativaHelp: 'Descreva como esses indicadores são divulgados e quem tem acesso a eles (ex: apenas sócios/diretores, gerentes de setor, equipe operacional ou toda a empresa em reuniões periódicas).'
     },
-    { 
-        id: 'Q3', 
-        dimension: 'Dimensão 1: Controles Gerenciais', 
-        text: 'Os indicadores possuem metas definidas?', 
+    {
+        id: 'Q3',
+        dimension: 'Dimensão 1: Controles Gerenciais',
+        text: 'Os indicadores possuem metas definidas?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Há metas para alguns indicadores.' }, { value: 'c', label: 'Sim, para todos os indicadores monitorados.' }],
         justificativaHelp: 'Explicite quais metas foram estabelecidas (ex: meta de crescimento de faturamento, redução de custos ou tempo de atendimento) e como elas são acompanhadas e cobradas.'
     },
-    { 
-        id: 'Q4', 
-        dimension: 'Dimensão 1: Controles Gerenciais', 
-        text: 'Você possui os dados de faturamento e custos mensal da sua empresa?', 
+    {
+        id: 'Q4',
+        dimension: 'Dimensão 1: Controles Gerenciais',
+        text: 'Você possui os dados de faturamento e custos mensal da sua empresa?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Sei quanto faturo e quanto gasto, mas não tenho detalhado.' }, { value: 'c', label: 'Sim, tenho total controle do faturamento e dos custos da minha empresa.' }],
         justificativaHelp: 'Descreva como é feito o acompanhamento financeiro (ex: controle de fluxo de caixa, separação de custos fixos e variáveis, apuração de DRE) e o grau de detalhamento desses dados.'
     },
     // Dimensão 2
-    { 
-        id: 'Q5', 
-        dimension: 'Dimensão 2: Gestão das Operações', 
-        text: 'Há um padrão para execução das atividades na sua empresa?', 
+    {
+        id: 'Q5',
+        dimension: 'Dimensão 2: Gestão das Operações',
+        text: 'Há um padrão para execução das atividades na sua empresa?',
         options: [{ value: 'a', label: 'Não há um padrão formalizado.' }, { value: 'b', label: 'Temos checklist de algumas tarefas, mas sem responsáveis definidos.' }, { value: 'c', label: 'Sim, temos procedimentos descritos para as principais atividades, com responsáveis definidos.' }],
         justificativaHelp: 'Descreva quais processos possuem rotinas padronizadas, manuais, POPs ou checklists (ex: atendimento, produção, entrega) e se há responsáveis definidos para garantir a execução.'
     },
-    { 
-        id: 'Q6', 
-        dimension: 'Dimensão 2: Gestão das Operações', 
-        text: 'Com que frequência a empresa fica sem estoque de produtos ou matérias-primas?', 
+    {
+        id: 'Q6',
+        dimension: 'Dimensão 2: Gestão das Operações',
+        text: 'Com que frequência a empresa fica sem estoque de produtos ou matérias-primas?',
         options: [{ value: 'a', label: 'Uma vez ou mais a cada três meses.' }, { value: 'b', label: 'Não muito frequente, uma vez a cada 6 meses.' }, { value: 'c', label: 'Nunca, sempre há o suficiente por perto.' }, { value: 'd', label: 'Não se aplica.' }],
         justificativaHelp: 'Explique como funciona o controle de estoque (ex: estoque mínimo, inventário periódico, compras sob demanda) e como a falta ou excesso de produtos afeta a operação.'
     },
-    { 
-        id: 'Q7', 
-        dimension: 'Dimensão 2: Gestão das Operações', 
-        text: 'Você controla a qualidade do produto ou do serviço que sua empresa oferece?', 
+    {
+        id: 'Q7',
+        dimension: 'Dimensão 2: Gestão das Operações',
+        text: 'Você controla a qualidade do produto ou do serviço que sua empresa oferece?',
         options: [{ value: 'a', label: 'Não temos controle de qualidade.' }, { value: 'b', label: 'Fazemos ações corretivas, quando há eventuais problemas.' }, { value: 'c', label: 'Temos procedimentos claros para garantir a qualidade.' }],
         justificativaHelp: 'Descreva os mecanismos de controle de qualidade adotados (ex: inspeção de produtos, padronização de serviços, acompanhamento de trocas/devoluções e ações corretivas).'
     },
-    { 
-        id: 'Q8', 
-        dimension: 'Dimensão 2: Gestão das Operações', 
-        text: 'Sua empresa premia ou bonifica os colaboradores quando as metas são alcançadas?', 
+    {
+        id: 'Q8',
+        dimension: 'Dimensão 2: Gestão das Operações',
+        text: 'Sua empresa premia ou bonifica os colaboradores quando as metas são alcançadas?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Sim, esporadicamente fazemos ações de reconhecimento.' }, { value: 'c', label: 'Sim, existe metodologia determinada que prevê reconhecimento regular.' }],
         justificativaHelp: 'Explique como funciona a política de reconhecimento ou bonificação da equipe (ex: comissões, bônus por metas coletivas/individuais, prêmios ou elogios formais).'
     },
     // Dimensão 3
-    { 
-        id: 'Q9', 
-        dimension: 'Dimensão 3: Gestão de Marketing', 
-        text: 'Normalmente, como são determinados os preços de seus produtos?', 
+    {
+        id: 'Q9',
+        dimension: 'Dimensão 3: Gestão de Marketing',
+        text: 'Normalmente, como são determinados os preços de seus produtos?',
         options: [{ value: 'a', label: 'Pelo que consideramos razoável.' }, { value: 'b', label: 'Defino preços com base no que é praticado pela concorrência.' }, { value: 'c', label: 'Precificamos com base nos nossos custos e no mercado.' }],
         justificativaHelp: 'Descreva os critérios utilizados para formação do preço de venda (ex: cálculo de custos + margem de lucro, pesquisa de mercado/concorrentes, valor percebido pelo cliente).'
     },
-    { 
-        id: 'Q10', 
-        dimension: 'Dimensão 3: Gestão de Marketing', 
-        text: 'A empresa pesquisa a satisfação de seus clientes sobre seus produtos/serviços?', 
+    {
+        id: 'Q10',
+        dimension: 'Dimensão 3: Gestão de Marketing',
+        text: 'A empresa pesquisa a satisfação de seus clientes sobre seus produtos/serviços?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Fazemos perguntas informais para os nossos clientes.' }, { value: 'c', label: 'Sim, fazemos pesquisas periódicas e analisamos as respostas.' }],
         justificativaHelp: 'Informe como a pesquisa de satisfação é realizada (ex: formulários online, pesquisas de pós-venda, caixa de sugestões, métrica NPS) e com qual frequência as respostas são analisadas.'
     },
-    { 
-        id: 'Q11', 
-        dimension: 'Dimensão 3: Gestão de Marketing', 
-        text: 'Você sabe quais são as necessidades de seus clientes e as tendências de mercado?', 
+    {
+        id: 'Q11',
+        dimension: 'Dimensão 3: Gestão de Marketing',
+        text: 'Você sabe quais são as necessidades de seus clientes e as tendências de mercado?',
         options: [{ value: 'a', label: 'Não analiso as necessidades dos clientes e tendências.' }, { value: 'b', label: 'Converso com meus clientes informalmente e acompanho tendências.' }, { value: 'c', label: 'Identifico periodicamente as necessidades e tendências e uso as informações.' }],
         justificativaHelp: 'Descreva os métodos ou ferramentas que utiliza para acompanhar tendências do seu setor e entender o perfil/necessidades dos seus clientes (ex: feedbacks de vendas, feiras do setor, redes sociais, pesquisas).'
     },
-    { 
-        id: 'Q12', 
-        dimension: 'Dimensão 3: Gestão de Marketing', 
-        text: 'São realizadas ações de divulgação da empresa e promoção dos produtos e/ou serviços?', 
+    {
+        id: 'Q12',
+        dimension: 'Dimensão 3: Gestão de Marketing',
+        text: 'São realizadas ações de divulgação da empresa e promoção dos produtos e/ou serviços?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Tenho algumas ações planejadas, mas a maioria sem plano prévio.' }, { value: 'c', label: 'Sim, realizo ações de forma planejada e acompanho os resultados.' }],
         justificativaHelp: 'Descreva quais canais e estratégias de divulgação são utilizados (ex: redes sociais, tráfego pago, rádio/panfletos, parcerias) e como mede os resultados dessas ações.'
     },
     // Dimensão 4
-    { 
-        id: 'Q13', 
-        dimension: 'Dimensão 4: Práticas de Inovação', 
-        text: 'Os funcionários procuram novas formas de realizar suas atividades?', 
+    {
+        id: 'Q13',
+        dimension: 'Dimensão 4: Práticas de Inovação',
+        text: 'Os funcionários procuram novas formas de realizar suas atividades?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Sim, alguns fazem isso por iniciativa própria.' }, { value: 'c', label: 'Sim e são incentivados a isso pelos gestores.' }],
         justificativaHelp: 'Explicite de que forma a empresa incentiva e apoia novas ideias trazidas pela equipe (ex: reuniões de brainstorming, caixa de ideias, autonomia para propor sugestões e teste de melhorias).'
     },
-    { 
-        id: 'Q14', 
-        dimension: 'Dimensão 4: Práticas de Inovação', 
-        text: 'No último ano, a empresa mudou algum processo para se tornar mais eficiente?', 
+    {
+        id: 'Q14',
+        dimension: 'Dimensão 4: Práticas de Inovação',
+        text: 'No último ano, a empresa mudou algum processo para se tornar mais eficiente?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Sim, mas não mensuramos o resultado dessas mudanças.' }, { value: 'c', label: 'Sim, implementamos melhorias e medimos os resultados destas.' }],
         justificativaHelp: 'Mencione quais processos internos foram modificados ou otimizados no último ano e quais foram os resultados práticos observados (ex: redução de tempo, menor desperdício, economia).'
     },
-    { 
-        id: 'Q15', 
-        dimension: 'Dimensão 4: Práticas de Inovação', 
-        text: 'A empresa lançou algum novo produto ou serviço nos últimos 2 anos?', 
+    {
+        id: 'Q15',
+        dimension: 'Dimensão 4: Práticas de Inovação',
+        text: 'A empresa lançou algum novo produto ou serviço nos últimos 2 anos?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Ainda não, mas estamos em planejamento para isso.' }, { value: 'c', label: 'Sim.' }],
         justificativaHelp: 'Descreva os novos produtos ou serviços lançados nos últimos 2 anos (ou em planejamento/desenvolvimento) e como foi a recepção pelo mercado.'
     },
-    { 
-        id: 'Q16', 
-        dimension: 'Dimensão 4: Práticas de Inovação', 
-        text: 'A empresa entrou em um novo mercado ou criou um nicho em um mercado que já atua nos últimos 2 anos?', 
+    {
+        id: 'Q16',
+        dimension: 'Dimensão 4: Práticas de Inovação',
+        text: 'A empresa entrou em um novo mercado ou criou um nicho em um mercado que já atua nos últimos 2 anos?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Ainda não, mas estamos em planejamento para isso.' }, { value: 'c', label: 'Sim.' }],
         justificativaHelp: 'Informe se a empresa passou a atender novas regiões, novos perfis de clientes ou criou um segmento diferenciado de atuação nos últimos 2 anos.'
     },
     // Dimensão 5
-    { 
-        id: 'Q17', 
-        dimension: 'Dimensão 5: Transformação Digital', 
-        text: 'Sua empresa possui método e sistema de gestão de estoque, finanças, faturamento, fiscal, compras, vendas e processos?', 
+    {
+        id: 'Q17',
+        dimension: 'Dimensão 5: Transformação Digital',
+        text: 'Sua empresa possui método e sistema de gestão de estoque, finanças, faturamento, fiscal, compras, vendas e processos?',
         options: [{ value: 'a', label: 'Não temos nenhum método.' }, { value: 'b', label: 'Temos um método manual ou com planilhas.' }, { value: 'c', label: 'Utilizamos sistemas informatizados de gestão (ERP).' }],
         justificativaHelp: 'Descreva quais ferramentas, planilhas ou softwares de gestão (ERP, sistema financeiro, controle de estoque) são utilizados na empresa e como estão integrados.'
     },
-    { 
-        id: 'Q18', 
-        dimension: 'Dimensão 5: Transformação Digital', 
-        text: 'De que forma a empresa faz uso da internet e das redes sociais?', 
+    {
+        id: 'Q18',
+        dimension: 'Dimensão 5: Transformação Digital',
+        text: 'De que forma a empresa faz uso da internet e das redes sociais?',
         options: [{ value: 'a', label: 'Não usamos.' }, { value: 'b', label: 'Usamos para fazer divulgação.' }, { value: 'c', label: 'Vendemos pela internet/redes sociais.' }],
         justificativaHelp: 'Explique de que forma a internet e redes sociais (Instagram, WhatsApp Business, E-commerce, Google) contribuem para o negócio (ex: atração de clientes, relacionamento ou vendas diretas).'
     },
-    { 
-        id: 'Q19', 
-        dimension: 'Dimensão 5: Transformação Digital', 
-        text: 'Sua empresa organiza e gere o cadastro de clientes?', 
+    {
+        id: 'Q19',
+        dimension: 'Dimensão 5: Transformação Digital',
+        text: 'Sua empresa organiza e gere o cadastro de clientes?',
         options: [{ value: 'a', label: 'Não registramos o cadastro.' }, { value: 'b', label: 'Sim, de forma manual ou na agenda do celular.' }, { value: 'c', label: 'Sim, utilizamos sistemas informatizados (CRM).' }],
         justificativaHelp: 'Descreva como o cadastro de clientes é organizado e atualizado (ex: sistema CRM, planilha, agenda) e quais informações são registradas (histórico de compras, preferências, contato).'
     },
-    { 
-        id: 'Q20', 
-        dimension: 'Dimensão 5: Transformação Digital', 
-        text: 'Sua empresa utiliza dados dos sistemas existentes na tomada de decisão?', 
+    {
+        id: 'Q20',
+        dimension: 'Dimensão 5: Transformação Digital',
+        text: 'Sua empresa utiliza dados dos sistemas existentes na tomada de decisão?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Sim, mas não é uma rotina.' }, { value: 'c', label: 'Sim, frequentemente.' }],
         justificativaHelp: 'Informe quais relatórios, dados ou métricas gerados pelos seus sistemas são analisados periodicamente para tomar decisões estratégicas no negócio.'
     },
     // Dimensão 6
-    { 
-        id: 'Q21', 
-        dimension: 'Dimensão 6: ESG', 
-        text: 'Sua empresa adota boas práticas para evitar desperdício de água, energia, materiais de consumo?', 
+    {
+        id: 'Q21',
+        dimension: 'Dimensão 6: ESG',
+        text: 'Sua empresa adota boas práticas para evitar desperdício de água, energia, materiais de consumo?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Sim, mas não realizamos medições.' }, { value: 'c', label: 'Sim, realizamos medições para acompanhar as reduções.' }],
         justificativaHelp: 'Descreva as práticas sustentáveis e de redução de desperdícios adotadas na rotina (ex: reciclagem, desligamento de equipamentos, controle de uso de água/energia/papel) e se há medição desses economias.'
     },
-    { 
-        id: 'Q22', 
-        dimension: 'Dimensão 6: ESG', 
-        text: 'Sua empresa prioriza materiais, produtos, embalagens e equipamentos ecorresponsáveis?', 
+    {
+        id: 'Q22',
+        dimension: 'Dimensão 6: ESG',
+        text: 'Sua empresa prioriza materiais, produtos, embalagens e equipamentos ecorresponsáveis?',
         options: [{ value: 'a', label: 'Não priorizamos.' }, { value: 'b', label: 'As vezes. Não é uma rotina.' }, { value: 'c', label: 'Sim, temos política para buscarmos ser ecorresponsáveis.' }],
         justificativaHelp: 'Informe se a empresa prioriza fornecedores sustentáveis, materiais recicláveis, embalagens biodegradáveis ou equipamentos de alta eficiência energética.'
     },
-    { 
-        id: 'Q23', 
-        dimension: 'Dimensão 6: ESG', 
-        text: 'Sua empresa possui mecanismos e ferramentas para proteção de dados dos clientes (LGPD)?', 
+    {
+        id: 'Q23',
+        dimension: 'Dimensão 6: ESG',
+        text: 'Sua empresa possui mecanismos e ferramentas para proteção de dados dos clientes (LGPD)?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Sim, mas não é uma rotina.' }, { value: 'c', label: 'Sim, frequentemente.' }],
         justificativaHelp: 'Descreva as ações ou políticas adotadas para proteger dados pessoais de clientes e colaboradores (ex: controle de acesso com senha, consentimento de uso de dados, armazenamento seguro).'
     },
-    { 
-        id: 'Q24', 
-        dimension: 'Dimensão 6: ESG', 
-        text: 'Sua empresa possui canais de comunicação com o cliente e os colaboradores para sugestões de melhoria?', 
+    {
+        id: 'Q24',
+        dimension: 'Dimensão 6: ESG',
+        text: 'Sua empresa possui canais de comunicação com o cliente e os colaboradores para sugestões de melhoria?',
         options: [{ value: 'a', label: 'Não.' }, { value: 'b', label: 'Sim, mas não está sistematizado.' }, { value: 'c', label: 'Sim, tratamos as sugestões e realizamos as devolutivas.' }],
         justificativaHelp: 'Descreva os canais de comunicação disponíveis para sugestões e reclamações (ex: canal interno, ouvidoria, WhatsApp, formulários) e como a empresa analisa e dá retorno a essas contribuições.'
     }
@@ -479,20 +479,47 @@ function submitData() {
     appContainer.innerHTML = `
         <div class="end-screen" style="animation: fadeIn 0.4s;">
             <h2>Enviando seus dados...</h2>
-            <p>Por favor, aguarde.</p>
+            <p>Por favor, aguarde enquanto registramos suas respostas.</p>
         </div>
     `;
 
-    // SIMULAÇÃO DE ENVIO: 
-    setTimeout(() => {
-        appContainer.innerHTML = `
+    const webhookUrl = 'https://n8n-0fur.srv812589.hstgr.cloud/webhook-test/ae876a22-3a8c-473a-92bf-41f963d81915';
+
+    const payload = {
+        cnpj: cnpjValue,
+        data_envio: new Date().toISOString(),
+        respostas: responses
+    };
+
+    fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Erro na rede ou no servidor: ${response.status}`);
+            }
+            appContainer.innerHTML = `
             <div class="end-screen" style="animation: fadeIn 0.4s;">
                 <h2>Obrigado por responder o Radar de Inovação! 🎉</h2>
                 <p>Suas respostas foram registradas com sucesso na nossa base de dados.</p>
                 <p><strong>Em breve, você receberá um relatório completo com o resultado do seu diagnóstico.</strong></p>
             </div>
         `;
-    }, 2000);
+        })
+        .catch(error => {
+            console.error('Erro ao enviar:', error);
+            appContainer.innerHTML = `
+            <div class="end-screen" style="animation: fadeIn 0.4s;">
+                <h2 style="color: #d93025;">Ops! Algo deu errado.</h2>
+                <p>Não conseguimos enviar suas respostas no momento.</p>
+                <button class="btn" style="margin-top: 15px;" onclick="submitData()">Tentar Novamente</button>
+            </div>
+        `;
+        });
 }
 
 renderWelcomeScreen();
