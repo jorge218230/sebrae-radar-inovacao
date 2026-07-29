@@ -339,7 +339,6 @@ function submitCNPJ() {
     errorDiv.style.display = 'none';
     input.style.borderColor = 'var(--border-color)';
     cnpjValue = input.value;
-    responses['cnpj'] = cnpjValue;
 
     historyStack.push('cnpj');
     currentIndex = 0;
