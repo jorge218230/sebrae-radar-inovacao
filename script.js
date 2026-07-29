@@ -491,17 +491,15 @@ function submitData() {
         respostas: responses
     };
 
+    // Usar text/plain impede o navegador de bloquear a requisição por CORS Preflight
     fetch(webhookUrl, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'text/plain'
         },
         body: JSON.stringify(payload)
     })
         .then(response => {
-            if (!response.ok) {
-                throw new Error(`Erro na rede ou no servidor: ${response.status}`);
-            }
             appContainer.innerHTML = `
             <div class="end-screen" style="animation: fadeIn 0.4s;">
                 <h2>Obrigado por responder o Radar de Inovação! 🎉</h2>
@@ -515,7 +513,7 @@ function submitData() {
             appContainer.innerHTML = `
             <div class="end-screen" style="animation: fadeIn 0.4s;">
                 <h2 style="color: #d93025;">Ops! Algo deu errado.</h2>
-                <p>Não conseguimos enviar suas respostas no momento.</p>
+                <p style="font-size: 0.85rem; color: #666; margin-top: 10px;">Erro detalhado: ${error.message}</p>
                 <button class="btn" style="margin-top: 15px;" onclick="submitData()">Tentar Novamente</button>
             </div>
         `;
