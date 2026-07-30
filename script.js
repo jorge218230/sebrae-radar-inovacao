@@ -482,7 +482,7 @@ function submitData() {
         </div>
     `;
 
-    const webhookUrl = 'https://lease-transaction-connection-worcester.trycloudflare.com/webhook-test/ae876a22-3a8c-473a-92bf-41f963d81915';
+    const webhookUrl = 'https://fountain-bingo-comm-followed.trycloudflare.com/webhook-test/ae876a22-3a8c-473a-92bf-41f963d81915';
 
     const payload = {
         cnpj: cnpjValue,
